@@ -1,0 +1,10 @@
+[Unit]
+Description=keep the zombies alive
+After=apache2.service
+After=mysql.service
+
+[Service]
+ExecStart=/root/scripts/zombies
+
+[Install]
+WantedBy=default.target
